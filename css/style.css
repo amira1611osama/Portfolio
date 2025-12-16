@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+/* MAIN COLORS */
+:root {
+  --main-color: rgb(219, 68, 68);
+  --hoverMainColor: rgb(177, 54, 54);
+  --shadow-color: rgba(0, 0, 0, 0.15);
+}
+/* BUTTON */
+.btn {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+  border-radius: 25px;
+  padding: 10px 28px;
+  border: none !important;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: var(--hoverMainColor) !important;
+}
+/* NAV LINK */
+.nav-link {
+  font-size: 17px;
+  margin-left: 20px;
+  transition: 0.3s;
+  color: #222;
+  font-weight: 600;
+}
+.nav-link:not(.btn):hover {
+  color: var(--main-color) !important;
+}
+/* ABOUT ME */
+.aboutMe {
+  min-height: 80vh;
+  display: flex;
+  gap: 50px;
+  padding: 40px 0;
+}
+.contntAboutMe h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.contntAboutMe hr {
+  width: 120px;
+  height: 4px;
+  background: var(--main-color);
+  border: none;
+  margin-top: 10px;
+}
+.aboutMe img {
+  width: 320px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px var(--shadow-color);
+  transition: 0.3s ease;
+}
+.aboutMe img:hover {
+  transform: translateY(-5px);
+}
+/* PROJECT IMAGE */
+/* Projects Section */
+.projects {
+  padding: 60px 0;
+}
+.projects h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.project-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.project-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+.projects h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.projects p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+.projects .row {
+  margin-bottom: 60px;
+}
+/* RESPONSIVE */
+@media(max-width: 992px) {
+  .aboutMe {
+    text-align: center;
+    flex-direction: column;
+  }
+  .aboutMe img {
+    width: 260px;
+  }
+    .projects .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .projects .col-lg-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .projects p {
+    text-align: center;
+  }
+}
+/* @media(max-width: 582px) {
+.aboutMe img {
+    width: 200px;
+  }
+} */
+
+
+
+/* Contact Section */
+.contact-section {
+  background: #fafafa;
+  padding: 60px 0;
+  margin-top: 70px;
+}
+
+.contact-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: var(--main-color);
+}
+
+/* Form Box */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Inputs */
+.contact-form .input-group {
+  margin-bottom: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  font-size: 15px;
+  background: #fdfdfd;
+  transition: 0.2s ease;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px rgba(219, 68, 68, 0.2);
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+/* Button */
+.send-btn {
+  width: 100%;
+  padding: 14px 0;
+  background: var(--main-color);
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: var(--hoverMainColor);
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .contact-form {
+    padding: 25px 18px;
+  }
+}
+.icons a {
+  font-size: 23px;
+}
+
